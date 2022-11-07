@@ -6,6 +6,6 @@ class RemoveStringSpacesAction
 {
     public function execute(string $value): string
     {
-        return 'A';
+        return str_replace(' ', '', $value);
     }
 }
